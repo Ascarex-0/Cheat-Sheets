@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Fira+Sans&family=Roboto&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="resources/Content%20-%20style.css" rel="stylesheet" type="text/css">
+    <title>CSS | Colors</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="./Cheat-Sheets.html">Cheat-Sheets</a></li>
+            <li class="dropdown">
+                <a class="active" id="active-drop" href="javascript:void(0)">CSS</a>
+                <div class="dropdown-content">
+                    <a href="css_Syntax%20&%20Selectors.html">Syntax & Selectors</a>
+                    <a href="css_Visual%20Rules.html">Visual Rules</a>
+                    <a href="css_Box%20Model.html">Box Model</a>
+                    <a href="css_Display%20&%20Positioning.html">Display & Positioning</a>
+                    <a class="active" href="css_Colors.html">Colors</a>
+                    <a href="css_Typography.html">Typography</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">HTML</a>
+                <div class="dropdown-content" id="drop-html">
+                    <a href="Elements%20&%20Structure.html">Elements & Structure</a>
+                    <a href="Tables.html">Tables</a>
+                    <a href="Forms.html">Forms</a>
+                    <a href="Semantic.html">Semantic</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<h1>Colors</h1>
+<table>
+    <thead>
+    <!--Header-->
+    <tr>
+        <th>Element/Attribute</th>
+        <th>Formatted Tag</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--Row 1-->
+    <tr>
+        <td>Color Name Keywords</td>
+        <td><span class="code">color: ... ;</span></td>
+        <td class="description">
+            <ul>
+                <li>Sets color property values</li>
+            </ul>
+        </td>
+    </tr>
+    <!--Row 2-->
+    <tr>
+        <td>rgb Colors</td>
+        <td><span class="code">colors: rgb(..., ..., ...);</span></td>
+        <td class="description">
+            <ul>
+                <li>Supplied with three values representing red, green & blue</li>
+                <li>Values range from 0 to 255</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 3-->
+    <tr>
+        <td>Hexadecimal Colors</td>
+        <td><span class="code">color: #...... ;</span></td>
+        <td class="description">
+            <ul>
+                <li>Composed of 6 hex-characters</li>
+                <li>Each group of two represents a value between 0 and 255 for red, green, or blue</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 4-->
+    <tr>
+        <td>HSL Colors</td>
+        <td><span class="code">color: hsl(..., ...%, ...%) ;</span></td>
+        <td class="description">
+            <ul>
+                <li>Contains values <em>hue, saturation, & lightness</em> respectively</li>
+                <li><em>Hue</em> ranges from 0 360, <em>saturation & lightness</em> are represented as percentages</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 5-->
+    <tr>
+        <td>Alpha Values</td>
+        <td><span class="code">color: rgba(..., ..., ..., ...) ;<br>
+                               color: hsla(..., ...%, ...%, ...) ;</span></td>
+        <td class="description">
+            <ul>
+                <li>Determines transparency of colors</li>
+                <li>Can be set for RGB and HSL colors by providing forth value</li>
+                <li>Values range from 0 (invisible) to 1 (opaque)</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<footer>
+    <h3>Created by Jules. &copy; Copyright</h3>
+</footer>
+</body>
+</html>

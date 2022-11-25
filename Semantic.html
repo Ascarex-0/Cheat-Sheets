@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Fira+Sans&family=Roboto&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="resources/Content%20-%20style.css" rel="stylesheet" type="text/css">
+    <title>HTML | Semantic</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="./Cheat-Sheets.html">Cheat-Sheets</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                <div class="dropdown-content">
+                    <a href="css_Syntax%20&%20Selectors.html">Syntax & Selectors</a>
+                    <a href="css_Visual%20Rules.html">Visual Rules</a>
+                    <a href="css_Box%20Model.html">Box Model</a>
+                    <a href="css_Display%20&%20Positioning.html">Display & Positioning</a>
+                    <a href="css_Colors.html">Colors</a>
+                    <a href="css_Typography.html">Typography</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="active" id="active-drop" href="javascript:void(0)">HTML</a>
+                <div class="dropdown-content" id="drop-html">
+                    <a href="Elements%20&%20Structure.html">Elements & Structure</a>
+                    <a href="Tables.html">Tables</a>
+                    <a href="Forms.html">Forms</a>
+                    <a class="active" href="Semantic.html">Semantic</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<h1>Semantic</h1>
+<table>
+    <thead>
+    <!--Header-->
+    <tr>
+        <th>Element/Attribute</th>
+        <th>Formatted Tag</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--Row 1-->
+    <tr>
+        <td>Semantic HTML</td>
+        <td><span class="code">-</span></td>
+        <td class="description">
+            <ul>
+                <li>Introduces meaning to elements/attributes</li>
+                <li>Elements tell what they do and what content should go in it<span class="code">&lt;html&gt;</span> tags</li>
+            </ul>
+        </td>
+    </tr>
+    <!--Row 2-->
+    <tr>
+        <td>Element Placements</td>
+        <td><span class="code">e.g.&lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Element tells what it does or where it should be placed</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 3-->
+    <tr>
+        <td>Section Element</td>
+        <td><span class="code">&lt;section&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Defines elements like chapters or headings with same theme</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 4-->
+    <tr>
+        <td>Title Element</td>
+        <td><span class="code">&lt;title&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Contains title of an HTML document</li>
+                <li>Displayed in the browser's title bar</li>
+                <li>Contained inside <span class="code">&lt;head&gt;</span> element</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 5-->
+    <tr>
+        <td>Heading Element</td>
+        <td><span class="code">&lt;h1&gt; - &lt;h6&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>HTML can use six levels of heading elements</li>
+                <li>Ordered from biggest (<span class="code">&lt;h1&gt;</span>) to lowest (<span class="code">&lt;h6&gt;</span>)</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 6-->
+    <tr>
+        <td>Div Element</td>
+        <td><span class="code">&lt;div&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Container that divides an HTML document into sections</li>
+                <li>Short for "division"</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 7-->
+    <tr>
+        <td>Paragraph Element</td>
+        <td><span class="code">&lt;p&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Contains & displays a block of text</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 8-->
+    <tr>
+        <td>Line Break Element</td>
+        <td><span class="code">&lt;br&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Creates a line break in text</li>
+                <li>Requires no closing tag</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 9-->
+    <tr>
+        <td>Span Element</td>
+        <td><span class="code">&lt;span&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Inline container for text</li>
+                <li>Can be used to group text for styling purposes</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 10-->
+    <tr>
+        <td>Strong Element</td>
+        <td><span class="code">&lt;strong&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Highlights important, serious, or urgent text</li>
+                <li>Browsers will normally render text in <strong>bold</strong> by default</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 11-->
+    <tr>
+        <td>Emphasis Element</td>
+        <td><span class="code">&lt;em&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Emphasises text</li>
+                <li>Browsers will normally <em>italicize</em> text by default</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 12-->
+    <tr>
+        <td>Ordered List Element</td>
+        <td><span class="code">&lt;ol&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Creates list of items in sequential order</li>
+                <li>Items will appear numbered by default</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 13-->
+    <tr>
+        <td>Unordered List Element</td>
+        <td><span class="code">&lt;ul&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Creates list of items in no particular order</li>
+                <li>Items will appear with bullet points by default</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 14-->
+    <tr>
+        <td>List Item Element</td>
+        <td><span class="code">&lt;li&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Creates list item inside ordered/unordered lists</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 15-->
+    <tr>
+        <td>Anchor Element</td>
+        <td><span class="code">&lt;a href="..."&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Creates hyperlink that can point to other webpages, files on the same server, a location on the same page, or any other URL</li>
+                <li>The hyperlink reference attribute (href) determines location the anchor element points to</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 16-->
+    <tr>
+        <td>Target Attribute</td>
+        <td><span class="code">&lt;a target="..."&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Specifies where a hyperlink should be opened</li>
+                <li>Nested inside <span class="code">&lt;a&gt;</span> opening tag</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 17-->
+    <tr>
+        <td>Video Element</td>
+        <td><span class="code">&lt;video src="..." controls&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Embeds media player for video playback</li>
+                <li>src attribute contains URL of video</li>
+                <li>controls attribute displays video controls in the media player</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!--Row 18-->
+    <tr>
+        <td>Image Element</td>
+        <td><span class="code">&lt;img src="..." alt="..."&gt;</span></td>
+        <td class="description">
+            <ul>
+                <li>Embeds image in documents</li>
+                <li>src attribute contains URL of image</li>
+                <li>Requires no closing tag</li>
+                <li>alt attribute contains alternative text if image fails to render</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<footer>
+    <h3>Created by Jules. &copy; Copyright</h3>
+</footer>
+</body>
+</html>
